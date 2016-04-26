@@ -5,6 +5,7 @@ all: install
 # dependencies installs all of the dependencies that are required for building
 # Sia.
 dependencies:
+	go install -a ./...
 	# Consensus Dependencies
 	go get -u github.com/NebulousLabs/demotemutex
 	go get -u github.com/NebulousLabs/ed25519
